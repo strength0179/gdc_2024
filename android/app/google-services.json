@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "357760275644",
+    "project_id": "gamer-413312",
+    "storage_bucket": "gamer-413312.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357760275644:android:d128f4e898538f42edacb9",
+        "android_client_info": {
+          "package_name": "tw.hsu.gamer.knights_tale.knights_tale"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALAL3cMwtYnKBZWHZAQy_RKmSKnja_DcQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

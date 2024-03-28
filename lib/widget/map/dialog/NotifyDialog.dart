@@ -7,6 +7,7 @@ class NotifyDialog{
 
   String title;
   String msg;
+  String? assetUrl = null;
 
   NotifyDialog(this.title, this.msg);
 
@@ -16,10 +17,42 @@ class NotifyDialog{
     this.pressed = pressed;
   }
 
+  void setImageUrl(String url){
+    this.assetUrl = url;
+  }
+
+  List<Widget> contents(){
+
+    if(assetUrl != null){
+      return [
+        Text(msg),
+        // Image(image: AssetImage('img/cat_march.jpg')),
+        Container(
+          width: 200,
+          // height: 200,
+          // decoration: BoxDecoration(
+          //     image: DecorationImage(
+          //         image: ExactAssetImage('img/cat_march.jpg'),
+          //         fit: BoxFit.fitWidth
+          //     )
+          // ),
+          child: Image(image: AssetImage(assetUrl!), fit: BoxFit.fitHeight),
+        ),
+      ];
+    }
+    else{
+      return [
+        Text(msg),
+      ];
+    }
+  }
+
   Widget dialog(BuildContext context){
     return AlertDialog(
       title: Text(title),
-      content: Text(msg),
+      content: Column(
+        children: contents()
+      ),
       actions: <Widget>[
         TextButton(
           onPressed: () => Navigator.pop(context, 'Cancel'),

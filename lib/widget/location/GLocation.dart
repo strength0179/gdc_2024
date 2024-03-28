@@ -34,4 +34,8 @@ class GLocation{
     return this;
   }
 
+  GLocation tmp(){
+    return GLocation(latitude.toDouble(), longitude.toDouble(), altitude.toDouble());
+  }
+
 }

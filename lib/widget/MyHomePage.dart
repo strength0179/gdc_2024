@@ -24,7 +24,7 @@ class MyHomePage extends StatefulWidget {
   String? getTitle(){
     if(title == null)
       return '';
-    return title;
+    return title! + ' 1.0.21';
   }
 
   @override

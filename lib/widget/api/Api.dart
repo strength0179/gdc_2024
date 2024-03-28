@@ -46,6 +46,7 @@ class Api{
     // Uri uri = Uri.https(url, param, {});
     Uri uri = Uri.https(url, param, query);
 
+
     print('Api URL [' + url + '/' + param + ']' );
 
     http.Response response = await http.get(uri);

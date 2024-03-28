@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
-// import 'package:geolocator/geolocator.dart';
 import 'package:knights_tale/widget/SignInWidget.dart';
 
-import 'widget/map/BusStationsWidget.dart';
-import 'widget/MyHomePage.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 import 'widget/SplashPage.dart';
+// import 'package:google_maps_directions/google_maps_directions.dart';
 
 Future<void> main() async {
 
   //AIzaSyA2tQbNYT8aLTg1gVVrHfuHHXcYxEt9JBo ANDROID
+
+  // GoogleMapsDirections.init(googleAPIKey: 'AIzaSyA2tQbNYT8aLTg1gVVrHfuHHXcYxEt9JBo');
 
   runApp(const MyApp());
 
